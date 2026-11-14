@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Moses and Vinnarasi Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#E4EEE6;--panel:#FBFCF8;--ink:#1F2A44;--soft:#4A5672;--gold:#8F6420;--heart:#B4373F;--btn:#1F2A44;--btnink:#FBFCF8;--env:#1F2A44;--env2:#2D3C60;--env3:#3A4C78;--line:rgba(143,100,32,.45);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root{--bg:#101828;--panel:#18233A;--ink:#EDEFE6;--soft:#B6BFCF;--gold:#D9B26A;--heart:#E0707A;--btn:#EDEFE6;--btnink:#18233A;--env:#0D1424;--env2:#18233A;--env3:#22314F;--line:rgba(217,178,106,.5);color-scheme:dark}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;font-size:1.25rem;line-height:1.45;text-align:center;-webkit-text-size-adjust:100%}
+body.lock{overflow:hidden}
+p{margin:.25rem 0}
+main{max-width:30rem;margin:0 auto;padding:0 1.25rem}
+.heart{width:1.1rem;height:1.1rem;fill:var(--heart);vertical-align:middle}
+.rule{display:flex;align-items:center;gap:.8rem;margin:1.6rem auto;max-width:15rem;color:var(--gold)}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:var(--line)}
+#env{position:fixed;top:0;left:0;right:0;bottom:0;z-index:50;background:var(--env);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;padding:env(safe-area-inset-top,0px) 1rem env(safe-area-inset-bottom,0px);transition:transform 1.1s cubic-bezier(.7,0,.2,1)}
+#env.gone{transform:translateY(-105%)}
+#env .intro{color:#F3EBD8;font-style:italic;font-size:2rem;line-height:1.2}
+#env .tap{color:#C9D2E6;font-size:1rem}
+.env{position:relative;width:min(84vw,340px);aspect-ratio:1.4;perspective:900px}
+.env .back{position:absolute;inset:0;background:var(--env2);border-radius:6px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.env .front{position:absolute;inset:0;background:var(--env3);clip-path:polygon(0 0,50% 56%,100% 0,100% 100%,0 100%);border-radius:6px}
+.env .flap{position:absolute;left:0;right:0;top:0;height:56%;background:#46598A;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top center;transition:transform .9s ease;z-index:3}
+.env.open .flap{transform:rotateX(180deg);z-index:0}
+#seal{position:absolute;left:50%;top:56%;width:4.2rem;height:4.2rem;margin:-2.1rem 0 0 -2.1rem;border-radius:50%;border:0;z-index:4;cursor:pointer;background:radial-gradient(circle at 35% 30%,#E8C57A,#A8782E);color:#3a2708;font:600 1.25rem "Cormorant Garamond",serif;box-shadow:0 4px 12
